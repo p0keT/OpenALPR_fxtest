@@ -19,8 +19,8 @@ public class Controller implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        String country = "us", configfile = "E:\\JLibraries\\alpr2.3\\openalpr-2.3.0-win-64bit\\openalpr_64\\openalpr.conf",
-                runtimeDataDir = "E:\\JLibraries\\alpr2.3\\openalpr-2.3.0-win-64bit\\openalpr_64\\runtime_data", licensePlate = "";
+        String country = "eu", configfile = "openalpr.conf",
+                runtimeDataDir = "runtime_data", licensePlate = "";
 
         com.openalpr.jni.Alpr alpr = new com.openalpr.jni.Alpr(country, configfile, runtimeDataDir);
 
